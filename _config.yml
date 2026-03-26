@@ -1,0 +1,56 @@
+title: Daylight
+email: support@runwell.dev
+description: >-
+  Daylight is a drop-in Rails engine for error tracking, performance monitoring,
+  and AI-powered insights — all backed by SQLite.
+baseurl: ""
+url: ""
+
+theme: jekyll-vitepress-theme
+plugins:
+  - jekyll-vitepress-theme
+
+jekyll_vitepress:
+  branding:
+    site_title: Daylight
+  syntax:
+    light_theme: github
+    dark_theme: github.dark
+  footer:
+    enabled: true
+    show_on_docs: true
+    message: "Released under the MIT License."
+    copyright: "Copyright 2026 Runwell"
+  doc_footer:
+    enabled: true
+    previous_label: "Previous page"
+    next_label: "Next page"
+  edit_link:
+    enabled: false
+  last_updated:
+    enabled: false
+  labels:
+    outline: "On this page"
+  tokens:
+    light:
+      --vp-c-brand-1: "#e67e22"
+      --vp-c-brand-2: "#d35400"
+      --vp-c-brand-3: "#c0392b"
+    dark:
+      --vp-c-brand-1: "#f5b041"
+      --vp-c-brand-2: "#f0b27a"
+      --vp-c-brand-3: "#fad7a0"
+
+collections:
+  guides:
+    output: true
+    permalink: "/:name/"
+  reference:
+    output: true
+    permalink: "/:name/"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
